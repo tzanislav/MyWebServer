@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Name & Age App</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+
+    Test2
+
+    <div id="app">
+        <!-- Your Vue app content will go here -->
+
+        <div>
+            <h1>Enter Your Name and Age</h1>
+            <input v-model="name" type="text" placeholder="Name">
+            <input v-model="age" type="number" placeholder="Age">
+            <button @click="addEntry">Add Entry</button>
+        </div>
+
+        <div v-if="entries.length">
+            <h2>Entries:</h2>
+            <ul>
+                <li v-for="(entry, index) in entries" :key="index">
+                    {{ entry.name }} (Age: {{ entry.age }})
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
