@@ -1,0 +1,19 @@
+{
+  "name": "i_learn_web",
+  "version": "1.0.0",
+  "description": "My First web thing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:\\Users\\tzani\\Desktop\\I_learn_web\\.git"
+  },
+  "keywords": [
+    "test",
+    "tzani"
+  ],
+  "author": "tzani",
+  "license": "ISC"
+}
